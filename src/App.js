@@ -1,10 +1,7 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Landing from './pages/Landing';
 function App() {
   return (
-    
-    <span className="text-teal-500">Hello world</span>
+    <Landing />
   );
 }
 
