@@ -1,5 +1,5 @@
 import axios from "axios";
-import { inputAddresses } from "../components/Waddress";
+import { inputAddresses } from "../components/WAddress";
 import moment from "moment/moment";
 const APIKEY = 'ckey_f2a7d8e02ddb427ea2764a67733';
 const baseURL = 'https://api.covalenthq.com/v1';
