@@ -1,13 +1,13 @@
 import React from 'react';
-import Datacard1 from '../components/Datacard1';
-import { Earnings } from '../components/Lchart';
-import HoldingsPie from '../components/PieChart';
+import Cards from '../components/Datacard1';
+import { Earnings } from '../components/Chart';
+import HoldingsPie from '../components/PiChart';
 import { getHRCBalances} from '../covalent/api';
 import { non_zero_tokens, portfolio_value, portfolio_value24, token_balances } from '../covalent/funcs';
 import Navbar from '../components/Navbar';
 import Loader from './Loader';
 import { Txs } from '../components/Txs';
-import { TxList } from '../components/TxList';
+import { TXlistssssss } from '../components/TXlistsssss';
 
 class Dashboard extends React.Component {
   state = {loading : true, curr_value : 0, avg_value : 0, holdingsData : [], nonZero_tokens : []};
@@ -30,12 +30,12 @@ class Dashboard extends React.Component {
           <div className="flex flex-wrap m-4">
             <div className="p-4 md:w-1/3">
             <div className="h-full bg-sss border border-gray-700 shadow-md w-full mx-4 rounded-lg overflow-hidden py-10 ">
-              {this.state.loading ? <Loader /> :<Datacard1 title={"Current Value "} data={this.state.curr_value}/>}
+              {this.state.loading ? <Loader /> :<Cards title={"Current Value "} data={this.state.curr_value}/>}
             </div>
             </div>
             <div className="p-4 md:w-1/3">
             <div className="h-full bg-sss border border-gray-700 shadow-md w-full mx-4 rounded-lg overflow-hidden py-10 ">
-            {this.state.loading ? <Loader /> :<Datacard1 title={"24HR Avg Value "} data={this.state.avg_value}/>}
+            {this.state.loading ? <Loader /> :<Cards title={"24HR Avg Value "} data={this.state.avg_value}/>}
             </div>
             </div>
             <div className="p-4 md:w-1/3">
@@ -62,7 +62,7 @@ class Dashboard extends React.Component {
             <div className="p-4 md:w-1/3">
               <div className="h-full bg-sss border border-gray-700 shadow-md w-full mx-4 rounded-lg overflow-hidden py-10 ">
               <div className="p-3">
-            {this.state.loading ?<Loader /> : <TxList />}
+            {this.state.loading ?<Loader /> : <TXlistsssss />}
             </div>
               </div>
             </div>

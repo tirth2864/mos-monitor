@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import { PieChart, Pie, Sector } from 'recharts';
+import { PiChart, Pie, Sector } from 'recharts';
 
 /* let data = [
   { name: 'Group A', value: 400 },
@@ -70,7 +70,7 @@ export default class HoldingsPie extends PureComponent {
   render() {
     return (
       <><div className="ml-4">
-        <PieChart width={450} height={400}>
+        <PiChart width={450} height={400}>
           <Pie
             activeIndex={this.state.activeIndex}
             activeShape={renderActiveShape}
@@ -83,7 +83,7 @@ export default class HoldingsPie extends PureComponent {
             dataKey="value"
             onMouseEnter={this.onPieEnter}
           />
-        </PieChart>
+        </PiChart>
         <div className="text-2xl text-spicy text-semibold font-barlow">Token Holdings</div>
         </div>
       </>

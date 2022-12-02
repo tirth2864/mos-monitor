@@ -1,7 +1,7 @@
 import React from "react";
 import { getNFTs } from "../covalent/api";
 
-class NftList extends React.Component {
+class NFTList extends React.Component {
     state = {nfts : [{}], loading : true, empty : false};
 
     componentDidMount(){
@@ -74,4 +74,4 @@ class NftList extends React.Component {
 }
 }
 
-export default NftList;
+export default NFTList;

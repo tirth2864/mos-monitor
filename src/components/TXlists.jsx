@@ -3,7 +3,7 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { getTransactions } from "../covalent/api";
 
-export const TxList = () => {
+export const TXlists = () => {
     const [tx, setTx] = useState([]);
 
     useEffect(() => {

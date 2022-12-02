@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Datacard1 extends React.Component {
+class cards extends React.Component {
 
   render() {
   return (
@@ -16,4 +16,4 @@ class Datacard1 extends React.Component {
     )
   }
 }
-export default Datacard1;
+export default cards;
